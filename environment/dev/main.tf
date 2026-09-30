@@ -33,3 +33,13 @@ module "azurerm_linux_virtual_machine" {
     module.azurerm_public_ip
   ]
 }
+
+module "postgressql" {
+  source             = "../../modules/azurerm_postgres_flexible_server"
+  postgresql_servers = var.postgresql_servers
+
+  depends_on = [
+    module.azurerm_resource_group,
+    module.azurerm_subnets
+  ]
+}

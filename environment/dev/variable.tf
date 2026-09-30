@@ -17,3 +17,7 @@ variable "public_ips" {
 variable "linux_vms" {
   type = any
 }
+
+variable "postgresql_servers" {
+  type = any
+}
