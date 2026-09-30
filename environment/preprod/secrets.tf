@@ -1,0 +1,7 @@
+# Secrets and sensitive credential management
+
+resource "random_password" "admin_password" {
+  length           = 16
+  special          = true
+  override_special = "!#$%&*()-_=+[]{}<>:?"
+}
