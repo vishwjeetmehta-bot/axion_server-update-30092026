@@ -3,10 +3,6 @@ resource_groups = {
     name     = "rg-preprod-landingzone"
     location = "East US"
   }
-  "rg-preprod" = {
-    name     = "rg-preprod-landingzone1"
-    location = "East US"
-  }
 }
 
 virtual_networks = {
